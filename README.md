@@ -34,7 +34,7 @@ RCT_EXPORT_METHOD(callNativeIosMethodParam:(NSString *)name){
 //自定义方法名：RCTResponseSenderBlock 带回调
 
 RCT_EXPORT_METHOD(callNativeIosBack:(RCTResponseSenderBlock)callBack) {
-  callBack(@[@"first",@"second"]);
+  callBack(@[@"first",@"second"]);//注意：这里用的是数组返回
 }
 
 @end
